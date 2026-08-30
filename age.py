@@ -1,7 +1,7 @@
 from random import randint
 print("Hello, I'm going to guess your age. ")
 name = input("What is your name? ")
-while (True):
+for i in range(5):
     guess = randint(15,40)
     print(f"Are you {guess} years old? ")
     answer = input()
@@ -10,3 +10,4 @@ while (True):
         exit(0)
     else:
         print("Rats")
+print ("I guess you win :(")
